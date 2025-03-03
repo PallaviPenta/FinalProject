@@ -1,0 +1,55 @@
+# --------------------
+# Python-related files
+# --------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+.env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints (if you use them)
+.ipynb_checkpoints/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# --------------------
+# Node.js / Frontend files
+# --------------------
+# Dependencies
+node_modules/
+
+# Production build (if applicable)
+build/
+dist/
+
+# Optional: local environment settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --------------------
+# OS-specific files
+# --------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# --------------------
+# Editor/IDE specific files
+# --------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# Others (e.g., temporary files)
+*.log

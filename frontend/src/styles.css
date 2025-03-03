@@ -1,0 +1,131 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Feature Input Section */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Feature Label */
+.feature-label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.radio-group label {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background: linear-gradient(135deg, #52c234, #061700);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button */
+button {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    transform: scale(1.05);
+}
+
+/* Prediction Result */
+.result {
+    font-size: 20px;
+    font-weight: 700;
+    color: #28a745;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .feature-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
